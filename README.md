@@ -1,6 +1,6 @@
 # pychroma example sketches
 
-If you are intrested in contributing to this repository check out [contributing guidelines](https://github.com/morswin22/pychroma-examples/blob/master/CONTRIBUTING.md)
+If you are intrested in contributing to this repository use the [issue templates](https://github.com/morswin22/pychroma-examples/issues/new/choose)
 
 ## Recent contributors
 
