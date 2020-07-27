@@ -6,5 +6,9 @@
     "supportedDevices": ["keyboard", "mouse", "mousepad", "keypad", "headset", "chromalink"],
     "description": "pychroma example animations",
     "title": "pychroma examples"
+  },
+  "devices": {
+    "keyboard": "Razer Ornata Chroma",
+    "mouse": "Razer Mamba Elite"
   }
 }

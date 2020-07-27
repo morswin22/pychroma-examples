@@ -15,3 +15,4 @@ If you are intrested in contributing to this repository check out [contributing 
 | [equalizer](https://github.com/morswin22/pychroma-examples/blob/master/examples/equalizer.py) | Music visualizer for keyboard and mouse | [Patryk Janiak](https://github.com/morswin22) |
 | [hello](https://github.com/morswin22/pychroma-examples/blob/master/examples/hello.py) | Colorful animation | [Patryk Janiak](https://github.com/morswin22) |
 | [numpad](https://github.com/morswin22/pychroma-examples/blob/master/examples/numpad.py) | Number display on keyboard's numpad | [Patryk Janiak](https://github.com/morswin22) |
+| [hello world](https://github.com/morswin22/pychroma-examples/blob/master/examples/helloworld.py) | Letters display using device key mapping | [Patryk Janiak](https://github.com/morswin22) |
