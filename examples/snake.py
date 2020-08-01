@@ -1,15 +1,14 @@
 from collections import deque
 from random import randint
 
-from pynput import keyboard
-
-from Numpad import Numpad
-from pychroma import Sketch
+from pychroma import Sketch, parse_key
 
 
 class Snake(Sketch):
+  config_path = 'config.json'
+
   def setup(self):
-    self.frame_rate = 1/4
+    self.frame_rate = 4
     self.constraints = ((3, 12), (1, 4))
     self.pos = [(self.constraints[0][1] - self.constraints[0][0]) // 2 + self.constraints[0][0], (self.constraints[1][1] - self.constraints[1][0]) // 2 + self.constraints[1][0]]
     self.dir = [1, 0]
@@ -17,18 +16,19 @@ class Snake(Sketch):
     self.history = deque(maxlen=self.size)
     self.history.append((self.pos[0]-1, self.pos[1]))
     self.spawn_fruit()
-    self.numpad = Numpad(self.controller)
-    self.numpad.value = self.size + 1
 
   def on_key_press(self, key):
-    if key == keyboard.Key.up:
+    key = parse_key(key)
+    if key == 'up':
       self.dir = [0, -1]
-    elif key == keyboard.Key.down:
+    elif key == 'down':
       self.dir = [0, 1]
-    elif key == keyboard.Key.left:
+    elif key == 'left':
       self.dir = [-1, 0]
-    elif key == keyboard.Key.right:
+    elif key == 'right':
       self.dir = [1, 0]
+    elif key == 'esc':
+      self.stop()
 
   def spawn_fruit(self):
     self.fruit = self.history[0]
@@ -39,7 +39,6 @@ class Snake(Sketch):
     self.spawn_fruit()
     temp = list(self.history)
     self.size += 1
-    self.numpad.value = self.size + 1
     self.history = deque(maxlen=self.size)
     for pos in temp:
       self.history.append(pos)
