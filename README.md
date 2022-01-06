@@ -18,3 +18,8 @@ If you are intrested in contributing to this repository use the [issue templates
 | [numpad](https://github.com/morswin22/pychroma-examples/blob/master/examples/numpad.py) | `python examples/numpad.py` | Number display on keyboard's numpad | [Patryk Janiak](https://github.com/morswin22) |
 | [mapper](https://github.com/morswin22/pychroma-examples/blob/master/examples/mapper.py) | `python examples/mapper.py` | Used to generate keyboard key mapping for Razer devices | [Patryk Janiak](https://github.com/morswin22) |
 | [hello world](https://github.com/morswin22/pychroma-examples/blob/master/examples/helloworld.py) | `python examples/helloworld.py` | Letters display using device key mapping | [Patryk Janiak](https://github.com/morswin22) |
+| [multi](https://github.com/morswin22/pychroma-examples/blob/master/examples/multi.py) | `python examples/multi.py` | Multiprocessing example with pychroma | [Patryk Janiak](https://github.com/morswin22) |
+
+## Configuration
+
+Please, change the `config.json` file to your needs. All examples use this configuration file.
